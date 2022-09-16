@@ -29,7 +29,7 @@ void GucciScales(){
   if(a >= 1000){
     a = 1;
   }
-
+/*
  // Black Storke Gucci
   strokeWeight(20);
   stroke(0,0,0);
@@ -47,7 +47,7 @@ void GucciScales(){
      line(x + 10 - a, y, x + 25 - a, y);
    }
  }
- 
+ */
   //Random Color Stroke Gucci
   strokeWeight(15);
   stroke((float)x,(float)y,(float)z);
