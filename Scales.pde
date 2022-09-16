@@ -7,7 +7,7 @@ double z = 1;
 float a = 1;
 
 void setup(){
-  size(1000,1000);
+  size(600,600);
   background(139,69,19);
 }
 
@@ -26,15 +26,25 @@ void draw(){
 void GucciScales(){
   
   a = pow((a + 1), a);
-  if(a >= 1000){
+  if(a >= 6000){
     a = 1;
   }
-/*
+
+//Back-background
+strokeWeight(5);
+  stroke(220,20,60);
+  for(int y = 600; y >= -100; y = y - 40){
+  for(int x = -100; x <= 600; x = x + 40){
+    ellipse(x, y, 40, 40);
+    ellipse(x - 20, y - 20, 40, 40);
+    }
+  }
+  
  // Black Storke Gucci
   strokeWeight(20);
   stroke(0,0,0);
-  for(int y = 2000; y >= -1000; y = y - 100){
-   for(int x = -1000; x <= 2000; x = x + 100){
+  for(int y = 600; y >= -100; y = y - 100){
+   for(int x = -100; x <= 600; x = x + 100){
      //45 degree Gucci
      arc(x - 15 + a/sqrt(2), y - 50 - a/sqrt(2), 50, 50, -PI/4, 6*PI/4);
      line(x - 15 + 10/sqrt(2) + a/sqrt(2), y - 50 - 10/sqrt(2) - a/sqrt(2), x - 15 + 25/sqrt(2) + a/sqrt(2), y - 50 - 25/sqrt(2) - a/sqrt(2));
@@ -47,12 +57,12 @@ void GucciScales(){
      line(x + 10 - a, y, x + 25 - a, y);
    }
  }
- */
+ 
   //Random Color Stroke Gucci
   strokeWeight(15);
   stroke((float)x,(float)y,(float)z);
-  for(int y = 2000; y >= -1000; y = y - 100){
-    for(int x = -1000; x <= 2000; x = x + 100){
+  for(int y = 600; y >= -100; y = y - 100){
+    for(int x = -100; x <= 600; x = x + 100){
       //45 degree Gucci
       arc(x - 15 + a/sqrt(2), y - 50 - a/sqrt(2), 50, 50, -PI/4, 6*PI/4);
       line(x - 15 + 10/sqrt(2) + a/sqrt(2), y - 50 - 10/sqrt(2) - a/sqrt(2), x - 15 + 25/sqrt(2) + a/sqrt(2), y - 50 - 25/sqrt(2) - a/sqrt(2));
@@ -70,8 +80,8 @@ void GucciScales(){
   strokeWeight(7);
   stroke(212,175,55);
   fill(139,69,19);
-  for(int y = 2000; y >= -1000; y = y - 100){
-    for(int x = -1000; x <= 2000; x = x + 100){
+  for(int y = 600; y >= -100; y = y - 100){
+    for(int x = -100; x <= 600; x = x + 100){
       //45 degree Gucci
       arc(x - 15 + a/sqrt(2), y - 50 - a/sqrt(2), 50, 50, -PI/4, 6*PI/4);
       line(x - 15 + 10/sqrt(2) + a/sqrt(2), y - 50 - 10/sqrt(2) - a/sqrt(2), x - 15 + 25/sqrt(2) + a/sqrt(2), y - 50 - 25/sqrt(2) - a/sqrt(2));
