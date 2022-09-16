@@ -29,17 +29,6 @@ void GucciScales(){
   if(a >= 1000){
     a = 1;
   }
-  
-  /*
-  strokeWeight(5);
-  stroke(220,20,60);
-  for(int y = 1000; y >= 0; y = y - 40){
-  for(int x = 0; x <= 1000; x = x + 40){
-    ellipse(x, y, 40, 40);
-    ellipse(x - 20, y - 20, 40, 40);
-    }
-  }
- */
 
  // Black Storke Gucci
   strokeWeight(20);
